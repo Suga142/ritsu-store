@@ -6,9 +6,9 @@ const NavBar = () => {
     return (
 
         <div className="container">
-            <div className="row">
+            <div className="row bg-light">
                 <div className="col-md-11">
-                    <nav className="navbar navbar-expand-lg bg-light">
+                    <nav className="navbar navbar-expand-lg">
                         <div className="container-fluid">
                             <a className="navbar-brand" href="#"><img src="img/logo-mini.png" alt="Ritsu-Store" width="120" /></a>
                             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
