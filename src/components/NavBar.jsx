@@ -18,16 +18,16 @@ const NavBar = () => {
                             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                                     <li className="nav-item">
-                                        <NavLink className="nav-link active" activeclassname ="page" to={"categoria/Funko"}>Funko</NavLink>
+                                        <NavLink className="nav-link active" activeclassname ="page" to={"category/Funko"}>Funko</NavLink>
                                     </li>
                                     <li className="nav-item">
-                                        <NavLink className="nav-link active" activeclassname ="page" to={"categoria/Llavero"}>Llaveros</NavLink>
+                                        <NavLink className="nav-link active" activeclassname ="page" to={"category/Llavero"}>Llaveros</NavLink>
                                     </li>
                                     <li className="nav-item">
-                                        <NavLink className="nav-link active" activeclassname ="page" to={"categoria/Peluche"}>Peluches</NavLink>
+                                        <NavLink className="nav-link active" activeclassname ="page" to={"category/Peluche"}>Peluches</NavLink>
                                     </li>
                                     <li className="nav-item">
-                                        <NavLink className="nav-link active" activeclassname= "page" to={"categoria/Pack"}>Packs</NavLink>
+                                        <NavLink className="nav-link active" activeclassname= "page" to={"category/Pack"}>Packs</NavLink>
                                     </li>
                                 </ul>
                             </div>
@@ -36,8 +36,8 @@ const NavBar = () => {
                 </div>
 
                 <div className="col-md-1 d-flex align-items-center justify-content-end">
-                    <CartWidget />
-                </div>
+                    <CartWidget/>
+                </div> 
             </div>
         </div>
 

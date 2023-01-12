@@ -1,98 +1,98 @@
 [
     {
         "id": 1,
-        "nombre": "Funko Pop Tomioka Giyuu",
+        "name": "Funko Pop Tomioka Giyuu",
         "img": "/img/tomioka.jpg",
-        "categoria": "Funko",
+        "category": "Funko",
         "stock": 10,
-        "precio": 12990
+        "price": 12990
     },
     {
         "id": 2,
-        "nombre": "Funko Pop Goku SSJ",
+        "name": "Funko Pop Goku SSJ",
         "img": "/img/goku.jpg",
-        "categoria": "Funko",
+        "category": "Funko",
         "stock": 10,
-        "precio": 12990
+        "price": 12990
     },
     {
         "id": 3,
-        "nombre": "Funko Pop Tanjiro Kamado",
+        "name": "Funko Pop Tanjiro Kamado",
         "img": "/img/tanjiro.jpg",
-        "categoria": "Funko",
+        "category": "Funko",
         "stock": 10,
-        "precio": 10990
+        "price": 10990
     },
     {
         "id": 4,
-        "nombre": "Llavero Lulu League of Legends",
+        "name": "Llavero Lulu League of Legends",
         "img": "/img/lulu.jpg",
-        "categoria": "Llavero",
-        "stock": 10,
-        "precio": 2990
+        "category": "Llavero",
+        "stock": 15,
+        "price": 2990
     },
     {
         "id": 5,
-        "nombre": "Llavero Ashe League of Legends",
+        "name": "Llavero Ashe League of Legends",
         "img": "/img/ashe.jpg",
-        "categoria": "Llavero",
-        "stock": 10,
-        "precio": 2990
+        "category": "Llavero",
+        "stock": 15,
+        "price": 2990
     },
     {
         "id": 6,
-        "nombre": "Llavero Soraka League of Legends",
+        "name": "Llavero Soraka League of Legends",
         "img": "/img/soraka.jpg",
-        "categoria": "Llavero",
-        "stock": 10,
-        "precio": 2990
+        "category": "Llavero",
+        "stock": 15,
+        "price": 2990
     },
     {
         "id": 7,
-        "nombre": "Peluche Tartaglia Genshin Impact",
+        "name": "Peluche Tartaglia Genshin Impact",
         "img": "/img/tartaglia.jpg",
-        "categoria": "Peluche",
-        "stock": 10,
-        "precio": 8990
+        "category": "Peluche",
+        "stock": 8,
+        "price": 8990
     },
     {
         "id": 8,
-        "nombre": "Peluche Xiao Genshin Impact",
+        "name": "Peluche Xiao Genshin Impact",
         "img": "/img/xiao.jpg",
-        "categoria": "Peluche",
-        "stock": 10,
-        "precio": 8990
+        "category": "Peluche",
+        "stock": 8,
+        "price": 8990
     },
     {
         "id": 9,
-        "nombre": "Peluche Zhongli Genshin Impact",
+        "name": "Peluche Zhongli Genshin Impact",
         "img": "/img/zhongli.jpg",
-        "categoria": "Peluche",
-        "stock": 10,
-        "precio": 8990
+        "category": "Peluche",
+        "stock": 8,
+        "price": 8990
     },
     {
-        "id": 10,
-        "nombre": "Llaveros Genshin Impact Mondstad",
+        "id": 91,
+        "name": "Llaveros Genshin Impact Mondstad",
         "img": "/img/mondstad.jpg",
-        "categoria": "Pack",
-        "stock": 10,
-        "precio": 9990
+        "category": "Pack",
+        "stock": 5,
+        "price": 9990
     },
     {
-        "id": 11,
-        "nombre": "Llaveros Genshin Impact Liyue",
+        "id": 92,
+        "name": "Llaveros Genshin Impact Liyue",
         "img": "/img/liyue.jpg",
-        "categoria": "Pack",
-        "stock": 10,
-        "precio": 17990
+        "category": "Pack",
+        "stock": 5,
+        "price": 17990
     },
     {
-        "id": 12,
-        "nombre": "Llaveros Genshin Impact Inazuma",
+        "id": 93,
+        "name": "Llaveros Genshin Impact Inazuma",
         "img": "/img/inazuma.jpg",
-        "categoria": "Pack",
-        "stock": 10,
-        "precio": 15990
+        "category": "Pack",
+        "stock": 5,
+        "price": 15990
     }
 ]
