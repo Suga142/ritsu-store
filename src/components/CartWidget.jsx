@@ -7,7 +7,6 @@ const CartWidget = () => {
     const {totalQuantity} = useCartContext();
 
     return (
-
         <NavLink to={"cart"}>
             <button type="button" className="btn btn-info position-relative">
                 <img src="/img/cart3.svg" alt="CartWidget" />
