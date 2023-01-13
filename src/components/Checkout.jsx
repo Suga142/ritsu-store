@@ -6,7 +6,6 @@ import { useCartContext } from "./context/CartContext";
 
 const Checkout = () => {
     const { cartList, totalPrice, cleanCart } = useCartContext();
-    
     const [nombre, setNombre] = useState("");
     const [telefono, setTelefono] = useState("");
     const [correo, setCorreo] = useState("");
@@ -14,7 +13,6 @@ const Checkout = () => {
     const [codigo, setCodigo] = useState("");
     const [fV, setFV] = useState("");
     const [orderId, setOrderId] = useState("");
-
     const createOrder = () => {
         const fecha = new Date();
         const order = {
@@ -23,16 +21,13 @@ const Checkout = () => {
             total: totalPrice(),
             orderDate: `${fecha.getFullYear()}-${fecha.getMonth() + 1}-${fecha.getDate()} ${fecha.getHours()}:${fecha.getMinutes()}:${fecha.getSeconds()}`
         }
-
         const db = getFirestore();
         const ordersCollection = collection(db, "orders");
         addDoc(ordersCollection, order).then((snapShot) => {
             setOrderId(snapShot.id);
             cleanCart();
         });
-
     }
-
     return (
         <div className="container text-center">
             <div className="row my-5">
@@ -62,9 +57,7 @@ const Checkout = () => {
                             <label for="fv" className="form-label">Fecha de Vencimiento:</label>
                             <input type="text" className="form-control" maxLength="5" placeholder="12/28" onInput={(e) => {setFV(e.target.value)}} />
                         </div>
-                        
-                        <button type="button" className="btn btn-info mt-5 mb-3" onClick={createOrder}>Completar pedido</button>
-                        
+                        <button type="button" className="btn btn-info mt-5 mb-3" onClick={createOrder}>Completar pedido</button> 
                     </form>
                 </div>
                 <div className="col-md-6">
@@ -104,5 +97,4 @@ const Checkout = () => {
         </div>
     )
 }
-
 export default Checkout;

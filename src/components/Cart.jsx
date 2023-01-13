@@ -2,7 +2,6 @@ import React from "react";
 import { useCartContext } from "./context/CartContext";
 import { Link } from "react-router-dom";
 
-
 const Cart = () => {
 
     const { cartList, totalPrice, removeProduct, cleanCart } = useCartContext();
@@ -44,13 +43,9 @@ const Cart = () => {
                             </button>
                         </Link>
                     </div>
-
                 </div>
             }
-
         </div>
-
     )
 }
-
 export { Cart }
