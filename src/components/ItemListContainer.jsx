@@ -10,20 +10,20 @@ import { addDoc, getDocs, collection, getFirestore, query, where } from "firebas
 const ItemListContainer = () => {
 
     const [items, setItems] = useState([]);
-    const {id} = useParams();
+    const { id } = useParams();
 
- /*   useEffect(() => {
-        const promesa = new Promise((resolve, reject) => {
-            setTimeout(() => {
-                resolve(id ? products.filter(item => item.categoria === id) : products);
-            }, 2000);
-        });
-
-        promesa.then((data) => {
-            setItems(data);
-        })
-
-    }, [id] );*/
+    /*   useEffect(() => {
+           const promesa = new Promise((resolve, reject) => {
+               setTimeout(() => {
+                   resolve(id ? products.filter(item => item.categoria === id) : products);
+               }, 2000);
+           });
+   
+           promesa.then((data) => {
+               setItems(data);
+           })
+   
+       }, [id] );*/
 
 
     // Comando para subir collection de products
@@ -40,20 +40,20 @@ const ItemListContainer = () => {
         const db = getFirestore();
         const itemsCollection = collection(db, "products");
 
-        const q = id ? query(itemsCollection, where("category", "==" , id)) : itemsCollection;
+        const q = id ? query(itemsCollection, where("category", "==", id)) : itemsCollection;
 
         // const q = query(itemsCollection, where("precio", "<" ,9000)); //Conulta de Filtrado
 
 
-        getDocs(q).then((snapShot) =>{
-            setItems(snapShot.docs.map((doc) => ({id: doc.id, ...doc.data()})
+        getDocs(q).then((snapShot) => {
+            setItems(snapShot.docs.map((doc) => ({ id: doc.id, ...doc.data() })
             ))
         });
     }, [id])
 
     return (
-        
-        
+
+
         <div className="container">
             <Greeting greeting={"¡Bienvenido a Ritsu Store, donde lo Fántastico puede ser real!"} />
             <ItemList items={items} />

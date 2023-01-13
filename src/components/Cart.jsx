@@ -33,13 +33,13 @@ const Cart = () => {
                 <h5 className="alert alert-info" role="alert">Aún no agregas ningún producto.</h5>
                 :
                 <div className="container">
-                    <div className="col-md-12 mt-2 pb-3">
-                        <h4>Total: ${totalPrice()}</h4>
+                    <div className="col-md-12 mt-3 mb-4">
+                        <h4 className="mb-4">Total: ${totalPrice()}</h4>
                         <button type="button" className="btn btn-danger" onClick={cleanCart}>Vaciar carrito</button>
                     </div>
                     <div className="col-md-12 pb-1">
                         <Link to={"/checkout"}>
-                            <button type="button" className="btn btn-info">
+                            <button type="button" className="btn btn-info mb-3">
                                 Finalizar compra.
                             </button>
                         </Link>
